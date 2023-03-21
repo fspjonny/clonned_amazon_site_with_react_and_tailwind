@@ -1,39 +1,31 @@
-# Clone do site da Amazon BR feito com Tailwind CSS
-Um trabalho criado totalmente com **Tailwind CSS** para estudos e consolidação de aprendizado.</br>
-Foi feito apenas uma parte da primeira página do site da Amazon objetivando demonstrar a capacidade do framework
-em fornecer subsídios suficientes para reproduzir a página oficial facilmente.</br>
-Os links da página apesar de ativos não são navegáveis, eles apenas imitam o comportamento visto no site original.
+# Clone do site da Amazon BR feito com React e Tailwind CSS
+Um trabalho criado totalmente com **React e Tailwind CSS** para estudos e consolidação do meu aprendizado.</br>
+Fiz apenas uma parte da página inicial do site da Amazon com poucas funcionalidades e animações, o objetivo é somente demonstrar o aprendizado de uso destes dois frameworks.</br>
+Os efeitos na página apesar de ativos não são navegáveis, eles apenas imitam o comportamento visto no site original para comarativo.
 
 <div align="center">
-<img width="455" src="https://i.imgur.com/TUOdNrC.png">
+<img width="455" src="https://i.imgur.com/45VPjlE.png">
 </div>
 
 ## Este projeto foi feito com:
 
-* [Tailwind CSS 3.2.4](https://tailwindcss.com/)
+* [React 18.2.0](https://pt-br.reactjs.org/)
+* [Tailwind CSS 3.2.7](https://tailwindcss.com/)
 
 ## Como rodar este projeto localmente?
 
-* Clone esse repositório: git clone https://github.com/fspjonny/tailwind-cloned-page-amazon.git<br>
+* Clone esse repositório: git clone https://github.com/fspjonny/clonned_amazon_site_with_react_and_tailwind.git<br>
 * Instale o Node JS de acordo com o seu sistema operacional [Node JS Download](https://nodejs.org/en/download/)
-* Se estiver usando o **Visual Studio Code** instale a extensão **Live Server**
-<div align="center">
-<img width="455" src="https://i.imgur.com/fm5Lkqo.png">
-</div>
 
-* Na pasta raiz da aplicação execute esta linha de comando abaixo:</br>
-`npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch`
-</br>Isso faz com que qualquer alteração feita no código, seja salvo no input.css e seja atualizado em output.css,</br>
-com o Live Server ativo a alteração é vista dinamicamente.
-<div align="center">
-<img width="455" src="https://i.imgur.com/ZN2eQZF.png">
-</div>
+* Na pasta raiz da aplicação execute esta linha de comando:</br>
+`npm install`</br>
+Isso fará a instalação dos pacotes e dependências do projeto.</br>
+Aguarde o termino do processo.
 
-* Agora abra a pasta deste projeto no seu **VS Code**, procure a pasta **"src"**, dentro dela tem o arquivo **"index.html"** que você deve abrir no editor.</br>
-Agora na parte inferior direita do VS Code, clique em **Go Live**
-<div align="center">
-<img width="455" src="https://i.imgur.com/yZRDdbV.png">
-<img width="455" src="https://i.imgur.com/1t92qBt.png">
-</div>
-</br>Pronto!, O seu navegador padrão vai abrir e exibir a página inicial do projeto,
-</br>que é a mesma que aparece no começo deste documento.
+* Ainda na pasta raiz da aplicação, após instalar os pacotes, execute agora esta linha de comando:</br>
+`npm start`</br>
+Isso fará a inicialização da aplicação que será lançada no seu navegador padrão na URL: `http://localhost:3000`, e você verá o projeto em funcionamento.
+
+</br>Pronto!,</br>
+O seu navegador padrão já exibe a página do projeto, que é a mesma que aparece no começo deste documento.
+</br>Obrigado pelo seu tempo, por apreciar este modesto trabalho.
