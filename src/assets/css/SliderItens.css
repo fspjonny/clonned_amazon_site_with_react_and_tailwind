@@ -1,0 +1,23 @@
+.default-nav {
+  height:120px !important;
+  width:40px !important;
+  background:rgba(255, 255, 255, 0.4) !important;
+  border-radius:5px !important;
+  text-align:center !important;
+  color:#fff !important;
+  fill: rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 1px 1px 2px rgba(167, 167, 167, 0.4) !important;
+  display:-webkit-box !important;
+  display:-ms-flexbox !important;
+  display:flex !important;
+  -webkit-box-align:center !important;
+  -ms-flex-align:center !important;
+  align-items:center !important;
+  -webkit-box-pack:center !important;
+  -ms-flex-pack:center !important;
+  justify-content:center !important;
+}
+
+.default-nav :hover{
+  fill: rgba(0, 0, 0, 0.6) !important;
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.item-second-nav {
+    @apply border border-transparent rounded-sm py-0;
+}
+
+.item-second-nav:hover{
+    @apply border-white;
+}
+
+.item-mobile-nav {
+    @apply text-sm p-1 whitespace-nowrap font-semibold cursor-pointer;
+}
+
+.item-nav-normal {
+    @apply text-sm whitespace-nowrap font-semibold py-1 cursor-pointer;
+}
+
+
+@screen md {
+    .item-mobile-nav {
+        @apply hidden;
+    }
+}
