@@ -2,7 +2,7 @@
   "name": "amazon-tailwind",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fspjonny.github.io/tailwind-cloned-page-facebook",
+  "homepage": "https://fspjonny.github.io/clonned_amazon_site_with_react_and_tailwind",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
