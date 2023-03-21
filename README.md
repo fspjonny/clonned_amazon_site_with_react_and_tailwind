@@ -1,7 +1,7 @@
 # Clone do site da Amazon BR feito com React e Tailwind CSS
 Um trabalho criado totalmente com **React e Tailwind CSS** para estudos e consolidação do meu aprendizado.</br>
 Fiz apenas uma parte da página inicial do site da Amazon com poucas funcionalidades e animações, o objetivo é somente demonstrar o aprendizado de uso destes dois frameworks.</br>
-Os efeitos na página apesar de ativos não são navegáveis, eles apenas imitam o comportamento visto no site original para comarativo.
+Os efeitos na página apesar de ativos não são navegáveis, eles apenas imitam o comportamento visto no site original para comparativo.
 
 <div align="center">
 <img width="455" src="https://i.imgur.com/45VPjlE.png">
