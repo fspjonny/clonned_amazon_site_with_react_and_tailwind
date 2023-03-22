@@ -1,24 +1,19 @@
 {
-  "name": "amazon-tailwind",
+  "name": "react-tailwind-amazon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://fspjonny.github.io/clonned_amazon_site_with_react_and_tailwind",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "gh-pages": "^5.0.0",
     "jquery": "^3.6.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
     "react-scripts": "5.0.1",
     "react-slideshow-image": "^4.2.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

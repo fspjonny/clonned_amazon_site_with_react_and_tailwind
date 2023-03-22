@@ -32,31 +32,31 @@ import item24 from "../assets/imgs/item24.png";
 
 // API ou registro de tabela que disporia as imagens do repo web
 const slideImages = [
-  {img:item0, caption:"Até 60% off"},
-  {img:item1, caption:"Calulares e Acessórios"},
-  {img:item2, caption:"Dispositivos Amazon"},
-  {img:item3, caption:"Computadores e Informática"},
-  {img:item4, caption:"Livros e eBooks"},
-  {img:item5, caption:"Eletrônicos e TVs"},
-  {img:item6, caption:"Video Games"},
-  {img:item7, caption:"Bebidas Alcólicas"},
-  {img:item8, caption:"Casa"},
-  {img:item9, caption:"Cozinha"},
-  {img:item10, caption:"Moda"},
-  {img:item11, caption:"Beleza"},
-  {img:item12, caption:"Alimentos e Bebidas"},
-  {img:item13, caption:"Itens para bebê"},
-  {img:item14, caption:"Casa Inteligente"},
-  {img:item15, caption:"Ferramentas e Construção"},
-  {img:item16, caption:"Brinquedos e Jogos"},
-  {img:item17, caption:"Papelaria e Escritório"},
-  {img:item18, caption:"Pet Shop"},
-  {img:item19, caption:"Esportes e Aventura"},
-  {img:item20, caption:"Jardim e Piscina"},
-  {img:item21, caption:"Automotivo"},
-  {img:item22, caption:"Instrumentos Musicais"},
-  {img:item23, caption:"CD e Vinil"},
-  {img:item24, caption:"DVD & Blu-Ray"},
+  {imageId:'it01', img:item0, caption:"Até 60% off"},
+  {imageId:'it02', img:item1, caption:"Calulares e Acessórios"},
+  {imageId:'it03', img:item2, caption:"Dispositivos Amazon"},
+  {imageId:'it04', img:item3, caption:"Computadores e Informática"},
+  {imageId:'it05', img:item4, caption:"Livros e eBooks"},
+  {imageId:'it06', img:item5, caption:"Eletrônicos e TVs"},
+  {imageId:'it07', img:item6, caption:"Video Games"},
+  {imageId:'it08', img:item7, caption:"Bebidas Alcólicas"},
+  {imageId:'it09', img:item8, caption:"Casa"},
+  {imageId:'it10', img:item9, caption:"Cozinha"},
+  {imageId:'it11', img:item10, caption:"Moda"},
+  {imageId:'it12', img:item11, caption:"Beleza"},
+  {imageId:'it13', img:item12, caption:"Alimentos e Bebidas"},
+  {imageId:'it14', img:item13, caption:"Itens para bebê"},
+  {imageId:'it15', img:item14, caption:"Casa Inteligente"},
+  {imageId:'it16', img:item15, caption:"Ferramentas e Construção"},
+  {imageId:'it17', img:item16, caption:"Brinquedos e Jogos"},
+  {imageId:'it18', img:item17, caption:"Papelaria e Escritório"},
+  {imageId:'it19', img:item18, caption:"Pet Shop"},
+  {imageId:'it20', img:item19, caption:"Esportes e Aventura"},
+  {imageId:'it21', img:item20, caption:"Jardim e Piscina"},
+  {imageId:'it22', img:item21, caption:"Automotivo"},
+  {imageId:'it23', img:item22, caption:"Instrumentos Musicais"},
+  {imageId:'it24', img:item23, caption:"CD e Vinil"},
+  {imageId:'it25', img:item24, caption:"DVD & Blu-Ray"},
 ]
 
 export default function SlideItens() {
@@ -80,24 +80,23 @@ useEffect(() => {
       <div className='inline-flex'>
         <span className="text-[22px] font-bold">Semana do Consumidor</span>
         <span className='hidden md:block text-[22px] font-bold'>: ofertas por categoria</span>
-        <span className="hidden md:block ml-5 my-auto p-0 text-[16px] text-gray-600 font-normal cursor-pointer hover:underline">
-          Veja mais ofertas
-          </span>
+        <span className="hidden md:block ml-5 my-auto p-0 text-[16px] text-gray-600 font-normal cursor-pointer hover:underline">Veja mais ofertas</span>
       </div>
 
-        <Slide slidesToScroll={isMobile ? 4:6} slidesToShow={isMobile ? 4:6} indicators={false} autoplay={false} 
-        transitionDuration={400} arrows={isMobile ? false:true} infinite={false}>
-        {slideImages.map( (slideImage, index)=> (
-            <div className='mt-5'>
-                <div key={index} className='cursor-pointer justify-center object-fit'>
-                  <div className='flex flex-col m-0'>
-                    <img src={slideImage.img} alt={`Imagem${index}`} />
-                    <span className='text-center text-slate-700 font-bold text-xs md:text-xl md:break-keep md:text-center'>{slideImage.caption}</span>
-                  </div>
-                </div>
+      <Slide slidesToScroll={isMobile ? 4:6} slidesToShow={isMobile ? 4:6} indicators={false} autoplay={false} 
+      transitionDuration={400} arrows={isMobile ? false:true} infinite={false}>
+        {slideImages.map((slideImage) => (
+          <div className='mt-5' key={slideImage.imageId}>
+            <div className='cursor-pointer justify-center object-fit'>
+              <div className='flex flex-col m-0'>
+                <img src={slideImage.img} alt={slideImage.caption} className="object-contain w-52" />
+                <span className='text-sm mx-auto text-gray-800 font-bold'>{slideImage.caption}</span>
+              </div>
             </div>
-        ))} 
-        </Slide>
+          </div>
+        ))}
+      </Slide>
+
     </div>
     )
 }

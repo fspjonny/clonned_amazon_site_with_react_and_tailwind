@@ -9,27 +9,29 @@ const cores = [
 ];
 
 const Gradiente = ({ intervalo = 8000, children }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0)
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setCurrentIndex((currentIndex + 1) % cores.length);
-    }, intervalo);
+      setCurrentIndex((currentIndex + 1) % cores.length)
+    }, intervalo)
 
     return () => {
-      clearTimeout(timeoutId);
+      clearTimeout(timeoutId)
     };
-  }, [currentIndex, intervalo]);
+  }, [currentIndex, intervalo])
 
   useEffect(() => {
-    $("#gradiente").fadeIn(600);
-  }, [currentIndex]);
+    $("#gradiente").fadeIn(600)
+  }, [currentIndex])
 
   return (
     <div id="gradiente" className={cores[currentIndex]}>
-      {children}
+      {React.Children.map(children, (child, index) => {
+        return React.cloneElement(child, { key: index });
+      })}
     </div>
-  );
-};
+  )
+}
 
 export default Gradiente;

@@ -16,7 +16,7 @@ export default function Footer() {
             <button className="block sm:hidden w-full text-white text-center text-[0.70rem] bg-[#37475a] hover:bg-slate-600 py-3 cursor-pointer"
             onClick={gotop}>
                 <div className="grid grid-cols-1 grid-rows-2">
-                <i class="fa-solid fa-chevron-up"></i> 
+                <i className="fa-solid fa-chevron-up"></i> 
                 VOLTAR AO TOPO DA PÁGINA
                 </div>
             </button>
@@ -182,7 +182,7 @@ export default function Footer() {
                 <div className="block my-3 text-gray-300 mx-auto text-xs">
                     <div className="flex flex-row py-4 justify-center space-x-8">
                         <span>
-                            <i class="fa-solid fa-globe"></i>
+                            <i className="fa-solid fa-globe"></i>
                             <span className="ml-2">Português</span>
                         </span>
                         

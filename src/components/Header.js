@@ -9,23 +9,23 @@ import m_user from "../assets/imgs/m_user.png";
 
 export default function Header() {
     return (
-        <div class="grid text-white">
-            <div class="flex flex-wrap md:flex-no-wrap bg-darkblue-900 px-2 py-1 items-center">
-                <div class="md:hidden py-1 px-2 hover:border-white rounded  cursor-pointer">
-                    <i class="fas fa-bars text-2xl"></i>
+        <div className="grid text-white">
+            <div className="flex flex-wrap md:flex-no-wrap bg-darkblue-900 px-2 py-1 items-center">
+                <div className="md:hidden py-1 px-2 hover:border-white rounded  cursor-pointer">
+                    <i className="fas fa-bars text-2xl"></i>
                 </div>
-                <div class="flex border border-transparent hover:border-white rounded-sm cursor-pointer">
+                <div className="flex border border-transparent hover:border-white rounded-sm cursor-pointer">
                     <img src={amazon_logo} alt="Amazon logo"/>
                 </div>
 
                 <div
-                    class="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                    className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
                     <img src={endereco} alt="endereço"/>
                 </div>
-                <div class="w-full md:w-auto flex-grow md:ml-3 mr-0 pt-1 order-2 md:order-none">
+                <div className="w-full md:w-auto flex-grow md:ml-3 mr-0 pt-1 order-2 md:order-none">
                     <form action=""
-                        class="flex focus-within:border-orange-660 focus-within:border-3 focus-within:rounded-lg">
-                        <select class="hidden p-2 text-xs text-gray-700 bg-gray-100 md:w-20 md:block hover:bg-gray-200 rounded-tl rounded-bl 
+                        className="flex focus-within:border-orange-660 focus-within:border-3 focus-within:rounded-lg">
+                        <select className="hidden p-2 text-xs text-gray-700 bg-gray-100 md:w-20 md:block hover:bg-gray-200 rounded-tl rounded-bl 
                         border-r border-gray-500 focus:border-orange-660 focus:border-2 cursor-pointer">
                             <option>Todos</option>
                             <option>Alexa Skills</option>
@@ -68,98 +68,98 @@ export default function Header() {
                         </select>
 
                         <input type="text"
-                            class="p-2 text-black flex-grow rounded-l md:rounded-none focus:outline-none sm:placeholder:text-white"
+                            className="p-2 text-black flex-grow rounded-l md:rounded-none focus:outline-none sm:placeholder:text-white"
                             placeholder="Pesquisa Amazon.com.br"/>
 
-                        <button class="px-4 bg-gold-100 hover:bg-gold-200 rounded-tr rounded-br">
-                            <i class="fas fa-search text-darkblue-900 text-xl"></i>
+                        <button className="px-4 bg-gold-100 hover:bg-gold-200 rounded-tr rounded-br">
+                            <i className="fas fa-search text-darkblue-900 text-xl"></i>
                         </button>
                     </form>
                 </div>
                 <div
-                    class="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
-                    <p class="leading-3">Olá, Fábio</p>
-                    <div class="flex flex-cols-2 pr-2 relative">
-                        <p class="font-bold text-sm">Contas e Listas</p>
-                        <img src={chevron} alt="img chevron" class="w-2 absolute bottom-1.5 left-26"/>
+                    className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                    <p className="leading-3">Olá, Fábio</p>
+                    <div className="flex flex-cols-2 pr-2 relative">
+                        <p className="font-bold text-sm">Contas e Listas</p>
+                        <img src={chevron} alt="img chevron" className="w-2 absolute bottom-1.5 left-26"/>
                     </div>
                 </div>
 
                 <div
-                    class="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
-                    <p class="leading-3">Devoluções</p>
-                    <p class="font-bold text-sm">e Pedidos</p>
+                    className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                    <p className="leading-3">Devoluções</p>
+                    <p className="font-bold text-sm">e Pedidos</p>
                 </div>
 
                 <div
-                    class="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                    className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
                     <img src={carrinho} alt="carrinho"/>
                 </div>
-                <div class="md:hidden">
+                <div className="md:hidden">
                     <img src={m_user} alt="user avatar"/>
                 </div>
-                <div class="md:hidden float-right">
+                <div className="md:hidden float-right">
                     <img src={m_carrinho} alt="carrinho mobile"/>
                 </div>
             </div>
-            <div class="bg-darkblue-700 text-sm px-4 items-center overflow-x-auto">
+            <div className="bg-darkblue-700 text-sm px-4 items-center overflow-x-auto">
 
-                <ul class="flex m-1">
-                    <li class="item-second-nav">
-                        <p class="hidden text-sm p-1 whitespace-nowrap font-semibold cursor-pointer md:block">
-                            <i class="fas fa-bars text-xl mr-2 align-middle"></i>Todos
+                <ul className="flex m-1">
+                    <li className="item-second-nav">
+                        <p className="hidden text-sm p-1 whitespace-nowrap font-semibold cursor-pointer md:block">
+                            <i className="fas fa-bars text-xl mr-2 align-middle"></i>Todos
                         </p>
-                        <p class="md:hidden text-sm font-semibold p-1 whitespace-nowrap cursor-pointer">Suas Listas</p>
+                        <p className="md:hidden text-sm font-semibold p-1 whitespace-nowrap cursor-pointer">Suas Listas</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="hidden md:block item-nav-normal">Venda na Amazon</p>
-                        <p class="item-mobile-nav">Mais Vendidos</p>
+                    <li className="item-second-nav px-2">
+                        <p className="hidden md:block item-nav-normal">Venda na Amazon</p>
+                        <p className="item-mobile-nav">Mais Vendidos</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="hidden md:block item-nav-normal">Comprar novamente</p>
-                        <p class="item-mobile-nav">Amazon Prime</p>
+                    <li className="item-second-nav px-2">
+                        <p className="hidden md:block item-nav-normal">Comprar novamente</p>
+                        <p className="item-mobile-nav">Amazon Prime</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="hidden md:block item-nav-normal">Eletrônicos</p>
-                        <p class="item-mobile-nav">Comprar novamente</p>
+                    <li className="item-second-nav px-2">
+                        <p className="hidden md:block item-nav-normal">Eletrônicos</p>
+                        <p className="item-mobile-nav">Comprar novamente</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="hidden md:block item-nav-normal">Computadores</p>
-                        <p class="item-mobile-nav">Livros</p>
+                    <li className="item-second-nav px-2">
+                        <p className="hidden md:block item-nav-normal">Computadores</p>
+                        <p className="item-mobile-nav">Livros</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="hidden md:block item-nav-normal">Ideias para Presente</p>
-                        <p class="item-mobile-nav">Descobrir um presente</p>
+                    <li className="item-second-nav px-2">
+                        <p className="hidden md:block item-nav-normal">Ideias para Presente</p>
+                        <p className="item-mobile-nav">Descobrir um presente</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="item-mobile-nav">Eletrônicos</p>
+                    <li className="item-second-nav px-2">
+                        <p className="item-mobile-nav">Eletrônicos</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="item-mobile-nav">Novidades na Amazon</p>
+                    <li className="item-second-nav px-2">
+                        <p className="item-mobile-nav">Novidades na Amazon</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="item-mobile-nav">Casa</p>
+                    <li className="item-second-nav px-2">
+                        <p className="item-mobile-nav">Casa</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="item-mobile-nav">Computadores</p>
+                    <li className="item-second-nav px-2">
+                        <p className="item-mobile-nav">Computadores</p>
                     </li>
 
-                    <li class="item-second-nav px-2">
-                        <p class="item-mobile-nav">Música</p>
+                    <li className="item-second-nav px-2">
+                        <p className="item-mobile-nav">Música</p>
                     </li>
                 </ul>
             </div>
-            <div class="bg-darkblue-550 text-sm pl-4 p-2 items-center md:hidden">
-                <img src={m_endereco} class="cursor-pointer" alt="endereço"/>
+            <div className="bg-darkblue-550 text-sm pl-4 p-2 items-center md:hidden">
+                <img src={m_endereco} className="cursor-pointer" alt="endereço"/>
             </div>
         </div>
     )
