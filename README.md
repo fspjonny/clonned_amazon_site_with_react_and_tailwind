@@ -7,6 +7,8 @@ Os efeitos na página apesar de ativos não são navegáveis, eles apenas imitam
 <img width="455" src="https://i.imgur.com/45VPjlE.png">
 </div>
 
+Projeto em execução no github.io: [https://fspjonny.github.io/clonned_amazon_site_with_react_and_tailwind/](https://fspjonny.github.io/clonned_amazon_site_with_react_and_tailwind/)
+
 ## Este projeto foi feito com:
 
 * [React 18.2.0](https://pt-br.reactjs.org/)
