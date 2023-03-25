@@ -13,6 +13,9 @@
 # production
 /build
 
+# my choice
+/rosa
+
 # misc
 .DS_Store
 .env.local
