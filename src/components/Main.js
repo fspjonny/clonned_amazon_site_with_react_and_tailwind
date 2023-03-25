@@ -1,3 +1,4 @@
+import React, {useState, useEffect} from 'react';
 import Card from "./Card";
 import DisplayGrid from "./DisplayGrid";
 import Image from "./Images";
@@ -11,22 +12,46 @@ import banner2 from "../assets/imgs/banner2.png";
 import banner3 from "../assets/imgs/banner3.png";
 import banner4 from "../assets/imgs/banner4.png";
 
-const images = [
+import mob_banner1 from "../assets/imgs/itens/banner_mobile/banner1.png";
+import mob_banner2 from "../assets/imgs/itens/banner_mobile/banner2.png";
+import mob_banner3 from "../assets/imgs/itens/banner_mobile/banner3.png";
+import mob_banner4 from "../assets/imgs/itens/banner_mobile/banner4.png";
+
+const normal_images = [
     <img src={banner1} alt="Banner 1"/>,
     <img src={banner2} alt="Banner 2"/>,
     <img src={banner3} alt="Banner 3"/>,
     <img src={banner4} alt="Banner 4"/>,
 ]
+const mob_images = [
+    <img src={mob_banner1} alt="Banner 1"/>,
+    <img src={mob_banner2} alt="Banner 2"/>,
+    <img src={mob_banner3} alt="Banner 3"/>,
+    <img src={mob_banner4} alt="Banner 4"/>,
+]
 
 
 export default function Main() {
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 767)
+
+    useEffect(() => {
+        function handleResize() {
+        setIsMobile(window.innerWidth <= 767)
+        }
+
+        window.addEventListener('resize', handleResize)
+
+        return () => {
+        window.removeEventListener('resize', handleResize)
+        }
+    }, [])    
 
     return (
         <Gradiente intervalo={8000}>
         <div id="gradiente">
             <main>
                 <span className="cursor-pointer">
-                    <BannerSlideShow images={images} intervalo={8000} direction={"left"}></BannerSlideShow>
+                    <BannerSlideShow images={isMobile ? mob_images:normal_images} intervalo={8000} direction={"left"}></BannerSlideShow>
                 </span>
                 <DisplayGrid>
                     <Card image={Image.card1} titulo="Ofertas em Echo com Alexa" nomeImagem="produtos Alexa" link="Compre agora"/>

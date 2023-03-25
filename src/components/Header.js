@@ -7,12 +7,14 @@ import m_carrinho from "../assets/imgs/m_carrinho.png";
 import m_user from "../assets/imgs/m_user.png";
 
 
-export default function Header() {
+export default function Header(props) {
     return (
         <div className="grid text-white">
             <div className="flex flex-wrap md:flex-no-wrap bg-darkblue-900 px-2 py-1 items-center">
                 <div className="md:hidden py-1 px-2 hover:border-white rounded  cursor-pointer">
-                    <i className="fas fa-bars text-2xl"></i>
+                    <button onClick={props.toogleMenu}>
+                        <i className="fas fa-bars text-2xl"></i>
+                    </button>
                 </div>
                 <div className="flex border border-transparent hover:border-white rounded-sm cursor-pointer">
                     <img src={amazon_logo} alt="Amazon logo"/>
@@ -104,10 +106,12 @@ export default function Header() {
             </div>
             <div className="bg-darkblue-700 text-sm px-4 items-center overflow-x-auto">
 
-                <ul className="flex m-1">
+                <ul className="flex flex-row items-center m-1">
                     <li className="item-second-nav">
                         <p className="hidden text-sm p-1 whitespace-nowrap font-semibold cursor-pointer md:block">
-                            <i className="fas fa-bars text-xl mr-2 align-middle"></i>Todos
+                            <button onClick={props.toogleMenu}>
+                                <i className="fas fa-bars text-xl mr-2 align-middle"></i>Todos
+                            </button>
                         </p>
                         <p className="md:hidden text-sm font-semibold p-1 whitespace-nowrap cursor-pointer">Suas Listas</p>
                     </li>

@@ -4,59 +4,57 @@ import 'react-slideshow-image/dist/styles.css';
 import '../assets/css/SliderItens.css';
 
 // Imagens que ficariam em um repo web
-import item0 from "../assets/imgs/item0.png";
-import item1 from "../assets/imgs/item1.png";
-import item2 from "../assets/imgs/item2.png";
-import item3 from "../assets/imgs/item3.png";
-import item4 from "../assets/imgs/item4.png";
-import item5 from "../assets/imgs/item5.png";
-import item6 from "../assets/imgs/item6.png";
-import item7 from "../assets/imgs/item7.png";
-import item8 from "../assets/imgs/item8.png";
-import item9 from "../assets/imgs/item9.png";
-import item10 from "../assets/imgs/item10.png";
-import item11 from "../assets/imgs/item11.png";
-import item12 from "../assets/imgs/item12.png";
-import item13 from "../assets/imgs/item13.png";
-import item14 from "../assets/imgs/item14.png";
-import item15 from "../assets/imgs/item15.png";
-import item16 from "../assets/imgs/item16.png";
-import item17 from "../assets/imgs/item17.png";
-import item18 from "../assets/imgs/item18.png";
-import item19 from "../assets/imgs/item19.png";
-import item20 from "../assets/imgs/item20.png";
-import item21 from "../assets/imgs/item21.png";
-import item22 from "../assets/imgs/item22.png";
-import item23 from "../assets/imgs/item23.png";
-import item24 from "../assets/imgs/item24.png";
+import item1 from "../assets/imgs/itens/normal/item1.png";
+import item2 from "../assets/imgs/itens/normal/item2.png";
+import item3 from "../assets/imgs/itens/normal/item3.png";
+import item4 from "../assets/imgs/itens/normal/item4.png";
+import item5 from "../assets/imgs/itens/normal/item5.png";
+import item6 from "../assets/imgs/itens/normal/item6.png";
+import item7 from "../assets/imgs/itens/normal/item7.png";
+import item8 from "../assets/imgs/itens/normal/item8.png";
+import item9 from "../assets/imgs/itens/normal/item9.png";
+import item10 from "../assets/imgs/itens/normal/item10.png";
+import item11 from "../assets/imgs/itens/normal/item11.png";
+import item12 from "../assets/imgs/itens/normal/item12.png";
+import item13 from "../assets/imgs/itens/normal/item13.png";
+import item14 from "../assets/imgs/itens/normal/item14.png";
+import item15 from "../assets/imgs/itens/normal/item15.png";
+import item16 from "../assets/imgs/itens/normal/item16.png";
+import item17 from "../assets/imgs/itens/normal/item17.png";
+import item18 from "../assets/imgs/itens/normal/item18.png";
+import item19 from "../assets/imgs/itens/normal/item19.png";
+import item20 from "../assets/imgs/itens/normal/item20.png";
+import item21 from "../assets/imgs/itens/normal/item21.png";
+import item22 from "../assets/imgs/itens/normal/item22.png";
+import item23 from "../assets/imgs/itens/normal/item23.png";
+import item24 from "../assets/imgs/itens/normal/item24.png";
 
 // API ou registro de tabela que disporia as imagens do repo web
 const slideImages = [
-  {imageId:'it01', img:item0, caption:"Até 60% off"},
-  {imageId:'it02', img:item1, caption:"Calulares e Acessórios"},
-  {imageId:'it03', img:item2, caption:"Dispositivos Amazon"},
-  {imageId:'it04', img:item3, caption:"Computadores e Informática"},
-  {imageId:'it05', img:item4, caption:"Livros e eBooks"},
-  {imageId:'it06', img:item5, caption:"Eletrônicos e TVs"},
-  {imageId:'it07', img:item6, caption:"Video Games"},
-  {imageId:'it08', img:item7, caption:"Bebidas Alcólicas"},
-  {imageId:'it09', img:item8, caption:"Casa"},
-  {imageId:'it10', img:item9, caption:"Cozinha"},
-  {imageId:'it11', img:item10, caption:"Moda"},
-  {imageId:'it12', img:item11, caption:"Beleza"},
-  {imageId:'it13', img:item12, caption:"Alimentos e Bebidas"},
-  {imageId:'it14', img:item13, caption:"Itens para bebê"},
-  {imageId:'it15', img:item14, caption:"Casa Inteligente"},
-  {imageId:'it16', img:item15, caption:"Ferramentas e Construção"},
-  {imageId:'it17', img:item16, caption:"Brinquedos e Jogos"},
-  {imageId:'it18', img:item17, caption:"Papelaria e Escritório"},
-  {imageId:'it19', img:item18, caption:"Pet Shop"},
-  {imageId:'it20', img:item19, caption:"Esportes e Aventura"},
-  {imageId:'it21', img:item20, caption:"Jardim e Piscina"},
-  {imageId:'it22', img:item21, caption:"Automotivo"},
-  {imageId:'it23', img:item22, caption:"Instrumentos Musicais"},
-  {imageId:'it24', img:item23, caption:"CD e Vinil"},
-  {imageId:'it25', img:item24, caption:"DVD & Blu-Ray"},
+  {imageId:'it01', img:item1, caption:"Dispositivos Amazon"},
+  {imageId:'it02', img:item2, caption:"Livros"},
+  {imageId:'it03', img:item3, caption:"eBooks"},
+  {imageId:'it04', img:item4, caption:"Computadores e Informática"},
+  {imageId:'it05', img:item5, caption:"Cuidados Pessoais"},
+  {imageId:'it06', img:item6, caption:"Games e Consoles"},
+  {imageId:'it07', img:item7, caption:"Cozinha"},
+  {imageId:'it08', img:item8, caption:"Brinquedos"},
+  {imageId:'it09', img:item9, caption:"Bebês"},
+  {imageId:'it10', img:item10, caption:"Papelaria e Escritório"},
+  {imageId:'it11', img:item11, caption:"Alimentos e Bebidas"},
+  {imageId:'it12', img:item12, caption:"Eletrônicos"},
+  {imageId:'it13', img:item13, caption:"Ferramentas e Construção"},
+  {imageId:'it14', img:item14, caption:"Casa"},
+  {imageId:'it15', img:item15, caption:"Beleza"},
+  {imageId:'it16', img:item16, caption:"Bebidas Alcoólicas"},
+  {imageId:'it17', img:item17, caption:"Jardim e Piscina"},
+  {imageId:'it18', img:item18, caption:"DVD's e Blu-ray"},
+  {imageId:'it19', img:item19, caption:"Pet Shop"},
+  {imageId:'it20', img:item20, caption:"Casa Inteligente"},
+  {imageId:'it21', img:item21, caption:"CD e Vinil"},
+  {imageId:'it22', img:item22, caption:"Moda"},
+  {imageId:'it23', img:item23, caption:"Esportes e Aventura"},
+  {imageId:'it24', img:item24, caption:"Automotivo"},
 ]
 
 export default function SlideItens() {
@@ -78,9 +76,10 @@ useEffect(() => {
     return (
     <div className="relative mx-5 mb-10 mt-5 md:p-5 grid grid-cols-1 grid-rows-1 bg-white">
       <div className='inline-flex'>
-        <span className="text-[22px] font-bold">Semana do Consumidor</span>
-        <span className='hidden md:block text-[22px] font-bold'>: ofertas por categoria</span>
-        <span className="hidden md:block ml-5 my-auto p-0 text-[16px] text-gray-600 font-normal cursor-pointer hover:underline">Veja mais ofertas</span>
+        <span className="text-[22px] font-bold">Nevegue por categoria</span>
+        {/* <span className='hidden md:block text-[22px] font-bold'>: ofertas por categoria</span> */}
+        <span className="hidden md:block ml-5 my-auto p-0 text-[16px] text-gray-600 font-normal cursor-pointer 
+        hover:underline">Veja todas as ofertas</span>
       </div>
 
       <Slide slidesToScroll={isMobile ? 4:6} slidesToShow={isMobile ? 4:6} indicators={false} autoplay={false} 
