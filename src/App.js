@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
 import SideBar from "./components/SideBar";
+import Background from "./components/Background";
 
 function App() {
 
@@ -21,8 +22,10 @@ function App() {
     <div>
       <SideBar showMenu={showMenu} toogleMenu={toogleMenu}/>
       <Header toogleMenu={toogleMenu}/>
+      <Background>
       <Main/>
       <Footer/>
+      </Background>
     </div>
   )
 }
