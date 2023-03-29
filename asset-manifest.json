@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clonned_amazon_site_with_react_and_tailwind/static/css/main.7e883687.css",
-    "main.js": "/clonned_amazon_site_with_react_and_tailwind/static/js/main.5dad5b12.js",
+    "main.css": "/clonned_amazon_site_with_react_and_tailwind/static/css/main.e1da47aa.css",
+    "main.js": "/clonned_amazon_site_with_react_and_tailwind/static/js/main.5c876b30.js",
     "static/js/787.0232ad64.chunk.js": "/clonned_amazon_site_with_react_and_tailwind/static/js/787.0232ad64.chunk.js",
     "static/media/banner2.png": "/clonned_amazon_site_with_react_and_tailwind/static/media/banner2.8f7b497cabe9caf253b7.png",
     "static/media/banner1.png": "/clonned_amazon_site_with_react_and_tailwind/static/media/banner1.15a8cb61214e159e338e.png",
@@ -42,12 +42,12 @@
     "static/media/item1.png": "/clonned_amazon_site_with_react_and_tailwind/static/media/item1.47bbd4e4f7323d35f9ca.png",
     "static/media/card-7.png": "/clonned_amazon_site_with_react_and_tailwind/static/media/card-7.9b9212f60f430e60340a.png",
     "index.html": "/clonned_amazon_site_with_react_and_tailwind/index.html",
-    "main.7e883687.css.map": "/clonned_amazon_site_with_react_and_tailwind/static/css/main.7e883687.css.map",
-    "main.5dad5b12.js.map": "/clonned_amazon_site_with_react_and_tailwind/static/js/main.5dad5b12.js.map",
+    "main.e1da47aa.css.map": "/clonned_amazon_site_with_react_and_tailwind/static/css/main.e1da47aa.css.map",
+    "main.5c876b30.js.map": "/clonned_amazon_site_with_react_and_tailwind/static/js/main.5c876b30.js.map",
     "787.0232ad64.chunk.js.map": "/clonned_amazon_site_with_react_and_tailwind/static/js/787.0232ad64.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e883687.css",
-    "static/js/main.5dad5b12.js"
+    "static/css/main.e1da47aa.css",
+    "static/js/main.5c876b30.js"
   ]
 }
