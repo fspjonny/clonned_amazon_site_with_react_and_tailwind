@@ -20,7 +20,7 @@ export function useMakeLogoff(cookieName) {
 
   const logOff = useCallback(() => {
     Cookies.remove(cookieName)
-    navigate("/")
+    navigate("/clonned_amazon_site_with_react_and_tailwind/")
     window.location.reload()
   }, [cookieName, navigate])
 
