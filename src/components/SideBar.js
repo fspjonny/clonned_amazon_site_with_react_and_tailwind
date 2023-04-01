@@ -36,10 +36,17 @@ export default function SideBar(props) {
                     </div>
 
                     {/* mob */}
-                    <div className="md:hidden bg-[#232f3e] w-full flex flex-col justify-between h-32">
+                    <div className="md:hidden bg-[#232f3e] w-full flex flex-col justify-between h-[148px]">
                         <div className="text-white pr-3 pt-4 flex justify-end">
-                            <span className="ml-3 text-[0.93rem] font-medium">Sua conta</span>
+                            <span className="text-[0.93rem] font-medium">Sua conta</span>
                             <i className="text-[18px] ml-2 fa-regular fa-user"></i>
+                        </div>
+
+                        <div className="text-white pr-3 pt-4 flex items-center justify-end">
+                            <span className="text-[1rem] font-medium w-7 h-7" onClick={useMakeLogoff('username')}>
+                                Sair
+                            </span>
+                            <i className="text-[18px] ml-2 fa-solid fa-arrow-right-from-bracket"></i>
                         </div>
 
                         <div className="text-white flex flex-col">
