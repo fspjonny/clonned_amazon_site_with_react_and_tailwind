@@ -1,23 +1,24 @@
 import React, { useState, useEffect } from "react";
 import "../assets/css/SideBar.css";
+import Cookies from "js-cookie";
+import { logOff } from "../assets/utils/utils";
 
 export default function SideBar(props) {
-
     const [height, setHeight] = useState('')
-  useEffect(() => {
-    const updateHeight = () => {
-      const screenHeight = window.innerHeight;
-      setHeight(`${screenHeight}px`);
-    };
+    useEffect(() => {
+        const updateHeight = () => {
+            const screenHeight = window.innerHeight
+            setHeight(`${screenHeight}px`)
+            };
+        updateHeight();
+        window.addEventListener('resize', updateHeight)
+        return () => {
+            window.removeEventListener('resize', updateHeight)
+        }
+    }, [])
 
-    updateHeight();
-    window.addEventListener('resize', updateHeight);
-
-    return () => {
-      window.removeEventListener('resize', updateHeight);
-    };
-  }, []);
-
+    const cookies = Cookies.get()
+    const hasCookie = Object.keys(cookies).length === 1
 
     return (
         <div id="menu" className={`fixed flex flex-col w-[100%] h-[100%] bg-black/70 z-20 ${props.showMenu ? 'visible' : 'collapse'}`}>
@@ -29,7 +30,9 @@ export default function SideBar(props) {
                     <div className="hidden bg-[#232f3e] w-full md:flex flex-row items-center pl-5 py-3">
                         <i className="flex justify-center items-center w-6 h-6 bg-white rounded-full text-[#232f3e] text-[18px] 
                         fa-solid fa-user"></i>
-                        <span className="ml-3 text-white text-[1.2rem] font-bold">Olá, Fábio</span>
+                        <span className="ml-3 text-white text-[1.2rem] font-bold">
+                            {hasCookie ? `Olá, ${cookies.username} `: "Olá"}
+                        </span>
                     </div>
 
                     {/* mob */}
@@ -148,7 +151,8 @@ export default function SideBar(props) {
                         <li className="flex flex-row justify-between items-center pl-8 py-3 group hover:bg-[#eaeded] cursor-pointer">
                             Ajuda
                         </li>
-                        <li className="flex flex-row justify-between items-center pl-8 py-3 group hover:bg-[#eaeded] cursor-pointer">
+                        <li className="flex flex-row justify-between items-center pl-8 py-3 group hover:bg-[#eaeded] cursor-pointer"
+                         onClick={logOff}>
                             Sair
                         </li>
                     </ul>
