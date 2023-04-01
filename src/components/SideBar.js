@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "../assets/css/SideBar.css";
 import Cookies from "js-cookie";
-import { logOff } from "../assets/utils/utils";
+import { useMakeLogoff } from "../assets/utils/useLogOff";
 
 export default function SideBar(props) {
     const [height, setHeight] = useState('')
@@ -152,7 +152,7 @@ export default function SideBar(props) {
                             Ajuda
                         </li>
                         <li className="flex flex-row justify-between items-center pl-8 py-3 group hover:bg-[#eaeded] cursor-pointer"
-                         onClick={logOff}>
+                         onClick={useMakeLogoff('username')}>
                             Sair
                         </li>
                     </ul>
