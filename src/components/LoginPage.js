@@ -22,7 +22,7 @@ export default function Login() {
 
     useEffect(() => {
         if (hasCookie) {
-        navigate("/");
+        navigate("/clonned_amazon_site_with_react_and_tailwind/");
         }
     },[hasCookie, navigate])    
     
@@ -30,10 +30,10 @@ export default function Login() {
     function setCookie(){
         if(inputValue===""){
             Cookies.set('username', 'Anônimo', {expires:expires})
-            navigate("/")
+            navigate("/clonned_amazon_site_with_react_and_tailwind/")
         } else {
             Cookies.set('username', inputValue, {expires:expires})
-            navigate("/")
+            navigate("/clonned_amazon_site_with_react_and_tailwind/")
         }
     }
 
@@ -41,7 +41,7 @@ export default function Login() {
         <>
         <div className="flex flex-col">
             <div className="flex flex-row justify-center mt-5 md:mt-4">
-                <Link to={'/'}>
+                <Link to={'/clonned_amazon_site_with_react_and_tailwind/'}>
                 <img className="w-36 md:w-auto" src={logo} alt="Amazon.com.br" />
                 </Link>
             </div>
@@ -86,7 +86,7 @@ export default function Login() {
                 <button className="text-[0.9rem] bg-gradient-to-b from-slate-100 via-[#edeff1] 
                 to-slate-100 rounded-sm p-[0.2rem] border-[1px] border-solid border-gray-400 
                 hover:bg-gradient-to-b hover:from-slate-200 hover:via-[#dee4ec] hover:to-slate-200"
-                onClick={()=> navigate("/")}>
+                onClick={()=> navigate("/clonned_amazon_site_with_react_and_tailwind/")}>
                     Criar sua conta da Amazon
                 </button>
             </div>
