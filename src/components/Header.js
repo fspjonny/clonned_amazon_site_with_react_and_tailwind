@@ -39,11 +39,13 @@ export default function Header(props) {
                         </span>
                         : 
                         <span>
+                            <Link to={"/logon"}>
                             Olá
                             <span className="flex flex-row font-semibold text-white text-sm">
                                 <img src={endereco} alt="endereço"/>
                                 Selecione o endereço
                             </span>
+                            </Link>
                         </span>}
                     </span>
                 </div>
@@ -112,15 +114,17 @@ export default function Header(props) {
                     </Link>
                 </div>
 
-                <div
-                    className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                <div className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                    <Link to={"/logon"}>
                     <p className="leading-3">Devoluções</p>
                     <p className="font-bold text-sm">e Pedidos</p>
+                    </Link>
                 </div>
 
-                <div
-                    className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                <div className="hidden md:block ml-1 pb-1 text-xs border border-transparent hover:border-white rounded-sm p-2 cursor-pointer">
+                    <Link to={"/logon"}>
                     <img src={carrinho} alt="carrinho"/>
+                    </Link>
                 </div>
 
                 <div className="flex flex-row items-center mx-4">
@@ -212,10 +216,12 @@ export default function Header(props) {
                     </span>
                 </span>
                 : 
+                    <Link to={"/logon"}>
                     <span className="flex flex-row items-center font-semibold text-white text-[0.8rem]">
                         <img src={m_endereco} alt="endereço"/>
                         Selecione o endereço
                     </span>
+                    </Link>
                 }
             </div>
         </div>

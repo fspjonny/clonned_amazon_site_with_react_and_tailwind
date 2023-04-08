@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "../assets/css/SideBar.css";
 import Cookies from "js-cookie";
 import { useMakeLogoff } from "../assets/utils/useLogOff";
+import { Link } from "react-router-dom";
 
 export default function SideBar(props) {
     const [height, setHeight] = useState('')
@@ -38,8 +39,10 @@ export default function SideBar(props) {
                     {/* mob */}
                     <div className="md:hidden bg-[#232f3e] w-full flex flex-col justify-between h-[148px]">
                         <div className="text-white pr-3 pt-4 flex justify-end">
+                            <Link to={"/logon"}>
                             <span className="text-[0.93rem] font-medium">Sua conta</span>
                             <i className="text-[18px] ml-2 fa-regular fa-user"></i>
+                            </Link>
                         </div>
 
                         <div className="text-white pr-3 pt-4 flex items-center justify-end">
@@ -152,9 +155,11 @@ export default function SideBar(props) {
 
                     <p className="hidden md:block ml-8 py-2 text-black font-bold text-[1.1rem]">Ajuda E Configurações</p>
                     <ul className="hidden md:block text-[0.9rem] font-medium">
+                        <Link to={"/logon"}>
                         <li className="flex flex-row justify-between items-center pl-8 py-3 group hover:bg-[#eaeded] cursor-pointer">
                             Sua Conta
                         </li>
+                        </Link>
                         <li className="flex flex-row justify-between items-center pl-8 py-3 group hover:bg-[#eaeded] cursor-pointer">
                             Ajuda
                         </li>
