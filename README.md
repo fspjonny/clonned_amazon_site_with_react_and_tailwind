@@ -16,7 +16,7 @@ Projeto em execução no github.io: [https://fspjonny.github.io/frontend-amazon-
 
 ## Como rodar este projeto localmente?
 
-* Clone esse repositório: git clone https://github.com/fspjonny/clonned_amazon_site_with_react_and_tailwind.git<br>
+* Clone esse repositório: git clone https://github.com/fspjonny/frontend-amazon-site-in-react-and-tailwind.git<br>
 * Instale o Node JS de acordo com o seu sistema operacional [Node JS Download](https://nodejs.org/en/download/)
 
 * Na pasta raiz da aplicação execute esta linha de comando:</br>
