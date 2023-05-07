@@ -31,3 +31,4 @@ Isso fará a inicialização da aplicação que será lançada no seu navegador 
 </br>Pronto!,</br>
 O seu navegador padrão já exibe a página do projeto, que é a mesma que aparece no começo deste documento.
 </br>Obrigado pelo seu tempo, por apreciar este modesto trabalho.
+</br>😉
