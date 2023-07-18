@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/frontend-amazon-site-in-react-and-tailwind/static/css/main.0e21c4f7.css",
-    "main.js": "/frontend-amazon-site-in-react-and-tailwind/static/js/main.edae7633.js",
+    "main.js": "/frontend-amazon-site-in-react-and-tailwind/static/js/main.7d40b7cf.js",
     "static/js/787.0232ad64.chunk.js": "/frontend-amazon-site-in-react-and-tailwind/static/js/787.0232ad64.chunk.js",
     "static/media/banner2.png": "/frontend-amazon-site-in-react-and-tailwind/static/media/banner2.8f7b497cabe9caf253b7.png",
     "static/media/banner1.png": "/frontend-amazon-site-in-react-and-tailwind/static/media/banner1.15a8cb61214e159e338e.png",
@@ -43,11 +43,11 @@
     "static/media/card-7.png": "/frontend-amazon-site-in-react-and-tailwind/static/media/card-7.9b9212f60f430e60340a.png",
     "index.html": "/frontend-amazon-site-in-react-and-tailwind/index.html",
     "main.0e21c4f7.css.map": "/frontend-amazon-site-in-react-and-tailwind/static/css/main.0e21c4f7.css.map",
-    "main.edae7633.js.map": "/frontend-amazon-site-in-react-and-tailwind/static/js/main.edae7633.js.map",
+    "main.7d40b7cf.js.map": "/frontend-amazon-site-in-react-and-tailwind/static/js/main.7d40b7cf.js.map",
     "787.0232ad64.chunk.js.map": "/frontend-amazon-site-in-react-and-tailwind/static/js/787.0232ad64.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0e21c4f7.css",
-    "static/js/main.edae7633.js"
+    "static/js/main.7d40b7cf.js"
   ]
 }
